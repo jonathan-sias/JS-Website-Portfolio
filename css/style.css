@@ -7,7 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-
+    
 }
 /*variables for colors*/
 :root{
@@ -20,14 +20,18 @@
 }
 /* changes background color*/
 body{
+   
     color: var(--bg-color);
-    background: var(--body-color);  
+    background: var(--body-color);
+    
 }
+ 
 img{
     width: 100%;
 }
 section{
     padding: 3rem 0 2rem;
+    
 }
 a{
     text-decoration: none;
@@ -40,20 +44,28 @@ li{
     max-width: 960px;
     margin: auto;
     width: 100%;
+    
 }
-/*Header*/
+/*Header postion sticky makes it website scroll!!!!! i had it on position fixed*/
 header{
-    position: fixed;
+    position: sticky; 
     top: 0;
     left: 0;
     width: 100%;
+    
 }
+.header-active{
+    background: var(--box-color);
+    transition: 0.4s;
+}
+
 /*moves the nav to the right*/
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    
 }
 /*changes the logo size and color*/
 .logo{
@@ -253,5 +265,256 @@ padding rectangle, border radius rounded corners, margin from top text  */
     border-radius: 0.5rem;
     margin-top: 1rem;
 }
+/*Services- rearranged into 3 colums of texts */
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+/* creates 3 colums behind the text, backgound color, and curved edges*/
+.services-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+    background: var(--container-color);
+    border-radius: 1rem;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* scale zoom when hovering over services box, and how lon the transition takes */
+.services-box:hover{
+    transform: scale(1.05);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* font of icon, color of icon, padding size of the radius, border dashed & color of it*/
+.services-box .bx{
+    font-size: 1.4rem;
+    color: var(--main-color);
+    padding: 14px;
+    border-radius: 5rem;
+    border: 2px dashed var(--bg-color);
+}
+/* subtiltles changes font, bold, margin, and color change*/
+.services-box h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: .5rem 0;
+    color: var(--main-color);
+}
+/* increase pharagraph font size */
+.services-box p{
+    font-size: .8rem;
+}
+/* Protfilio  */
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+}
+/* box contains all of the portofolio stuff */
+.portfolio-box{
+    position: relative;
+    width: 95%;
+    height: 700px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+/* size of the imgs  */
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* overlay background color, -100 not shown unless hover  */
+.portfolio-overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(24, 29, 72, 0.7);
+}
+/*  overlay text font size and weight */
+.portfolio-overlay h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* Link icon size, square border radious, curved edges, color */
+.portfolio-overlay .bx{
+    font-size: 24px;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 7px;
+}
+/*  when hovering over the portfolio overlay slides down  */
+.portfolio-overlay .bx:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
+}
 
-/* */
+.portfolio-box:hover .portfolio-overlay{
+    top: 0;
+    transition: 0.6s all ease 0s;
+}
+
+.scroll-top{
+    position:fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+}
+
+.scroll-top .bx{
+    padding: 8px;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: .2rem;
+}
+.scroll-top .bx:hover{
+    background: var(--container-color);
+    transition: 0.3s;
+}
+.scroll-active{
+    bottom: 2rem;
+    transition: 0.3s;
+}
+/* makes 3 colums for the projects content*/
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: center;
+    gap: 2rem;
+}
+/* creates the size box, background color, curves edges*/
+.project-box{
+    padding: 35px 10px;
+    background: var(--container-color);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.project-box h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.project-box span{
+    font-size: .9rem;
+}
+/* the whole reviews seciton max width  */
+.reviews{
+    max-width: 750px;
+    margin: auto;
+    width: 100%;
+
+/*  review box padding:box size, align text column, bkg color */
+}
+.review-box{
+    padding: 40px 60px;
+    max-width: 580px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.5rem !important;
+    border-radius: 1.5rem;
+    background-color: var(--container-color);
+    
+}
+/* quotation color, size, margin */
+.review-box .bx{
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+.review-box .review-text{
+    font-size: .90rem;
+    margin-bottom: 1rem;
+}
+.review-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+/* person font color */
+.review-profile h2{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+/* from location font */
+.review-profile span{
+    font-size: 1rem;
+    margin: 0.5rem 0 0.07rem;
+}
+/* size of img, border circle, color solid,  */
+.review-profile img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+}
+/* swipe bullet white */
+.swiper-pagination-bullet {
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 0.2rem !important;
+    background: var(--bg-color) !important;
+    opacity: 1 !important;
+}
+/* swipe when on a page the bullet turns blue, width 1.1rem */
+.swiper-pagination-bullet-active{
+    width: 1.1rem !important;
+    background: var(--main-color) !important;
+}
+/* Contact Form area into grinds, gap space */
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+/* no border or outline, text font size & color, bkg color of boxes, curved edges*/
+.contact-form input,.contact-form textarea{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--body-color);
+    border-radius: .5rem;
+}
+/* send btn font size, bold, all uppercase, bkg color, when hover cursor turns pointer */
+.contact-form .send-btn{
+    width: 120px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+/* when hover over sendbtn bkg color change*/
+.contact-form .send-btn:hover{
+    background: #546eff;
+    transition: 0.2s all linear;
+}
