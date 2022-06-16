@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +9,23 @@
     <title>Jonathan Sias</title>
 <!--css link-->
     <link rel="stylesheet" href="css/style.css">
+ <!--Link Swiper CSS-->
+ <link rel="stylesheet" href="css/swiper-bundle.min.css">   
 <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
 <body>
+     
+    <!--Scroll Top-->
+<a href="#home" class="scroll-top">
+    <i class='bx bx-up-arrow-alt' ></i>
+</a>
+
     <!--Header-->
     <header>
+       
         <div class="nav container">
             <!--Logo-->
             <a href="#" class="logo">Jonathan Sias</a>
@@ -33,7 +45,8 @@
             </div>
         </div>
         <!--Home-->
-     <selection class="home container="home">
+     <selection class="home container" id="home">
+      
         <div class="home-content">
             <div class="home-img">
              <img src="img/js-profile.png" alt="">
@@ -74,16 +87,203 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Project details are listed below.</p>
         </div>
+        
+    </div>
+</section>
+<!-- Services -->
+
+<section class="services container" id="services">
+    <!--Heading-->
+    <h2 class="heading">Services</h2>
+    <!--Services Content-->
+    <div class="services-content">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-lock' ></i>
+            <h2>Cyber Security</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-brush' ></i>
+            <h2>Web Designing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+        </div>
+        
+    </div>
+</section>
+    <!-- Portfolio-->
+<section class="portfolio container" id="portfolio">
+    <!--Heading-->
+    <h2 class="heading">Portfolio</h2>
+    <!--Portfolio Content-->
+    <div class="portfolio-content">
+        <div class="portfolio-box">
+            <img src="img/portfolio-1.webp" alt="" class="portfolio-img">
+            <!--Overlay-->
+        
+            <div class="portfolio-overlay">
+                <h2>Web Development</h2>
+                <a href="#">
+                    <i class='bx bx-link-external' ></i>
+                </a>
+            </div>
+         </div>
+    </div>
+    <div class="portfolio-content">
+        <div class="portfolio-box">
+            <img src="img/portfolio-2.webp" alt="" class="portfolio-img">
+            <!--Overlay-->
+        
+            <div class="portfolio-overlay">
+                <h2>Web Design</h2>
+                <a href="#">
+                    <i class='bx bx-link-external' ></i>
+                </a>
+            </div>
+         </div>
+    </div>
+    <div class="portfolio-content">
+        <div class="portfolio-box">
+            <img src="img/portfolio-3.webp" alt="" class="portfolio-img">
+            <!--Overlay-->
+        
+            <div class="portfolio-overlay">
+                <h2>Cyber Security</h2>
+                <a href="#">
+                    <i class='bx bx-link-external' ></i>
+                </a>
+            </div>
+         </div>
+    </div>
+    <div class="portfolio-content">
+        <div class="portfolio-box">
+            <img src="img/portfolio-4.webp" alt="" class="portfolio-img">
+            <!--Overlay-->
+        
+            <div class="portfolio-overlay">
+                <h2>Others</h2>
+                <a href="#">
+                    <i class='bx bx-link-external' ></i>
+                </a>
+            </div>
+         </div>
     </div>
 </section>
 
+<!--Projects-->
+<section class="projects container" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-content">
+         <div class="project-box">
+             <h2>Amount of</h2>
+             <span>Projects Completed</span>
+         </div>
+         <div class="project-box">
+             <h2>Amount of</h2>
+             <span>Websites Developed</span>
+         </div>
+         <div class="project-box">
+             <h2>Amount of</h2>
+             <span>Placeholder</span>
+         </div>
+
+    </div>
+
+</section>
+    <!--Review-->  
+<section class="container reviews" id="reviews">
+    <!--Heading-->
+    <h2 class="heading">Reviews</h2>
+    <!-- Review Content-->
+    <div class="reviews-content swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <!--Review Box-->
+           <div class="review-box">
+                    <i class='bx bxs-quote-right'></i>
+                    <p class="review-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, neque officia. Sequi accusamus explicabo aperiam adipisci aliquid similique harum, aut earum, cum officiis inventore quas.
+                    </p>
+                    <div class="review-profile">
+                        <h2>Audrey Bella</h2>
+                        <span>From Finland</span>
+                        <img src="img/review-1.jpg" alt="">
+                    </div>
+                </div>  
+            </div>
+            <div class="swiper-slide">
+             <!--Review Box-->
+           <div class="review-box">
+                    <i class='bx bxs-quote-right'></i>
+                    <p class="review-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, neque officia. Sequi accusamus explicabo aperiam adipisci aliquid similique harum, aut earum, cum officiis inventore quas.
+                    </p>
+                    <div class="review-profile">
+                        <h2>John Doe</h2>
+                        <span>From United States</span>
+                        <img src="img/review-2.jpg" alt="">
+                    </div>
+                </div>  
+            </div>
+            <div class="swiper-slide">
+             <!--Review Box-->
+           <div class="review-box">
+                    <i class='bx bxs-quote-right'></i>
+                    <p class="review-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, neque officia. Sequi accusamus explicabo aperiam adipisci aliquid similique harum, aut earum, cum officiis inventore quas.
+                    </p>
+                    <div class="review-profile">
+                        <h2>Alex</h2>
+                        <span>From Mexico</span>
+                        <img src="img/review-3.jpg" alt="">
+                    </div>
+                </div>  
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--Contact Form-->
+<section class="contact container" id="contact">
+    <!--Contact Heading-->
+    <h2 class="heading">Contact</h2>
+    <!--Contact Form-->
+    <form action="" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Your Name..." class="name" required>
+        <input type="email" name="" id="" placeholder="Email address... " class="email" required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+        <input type="submit" value="Send" class="send-btn">
+    </form>
+    </div>
+</section> 
+
+<!--Email Js Link-->
+<script type="text/javascript" src="https:cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!--Sweet Alert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("1ZjCMlulISlJfD-tv");
+    })();
+    
+</script>
 
 
 
-
+<!--gmail api key-->
     </header>
+    <!--Link Swiper JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+
     <!--Link To JS-->
     <script src="js/main.js"></script>
+    
 </body>
 </html>
 <!--link-->
